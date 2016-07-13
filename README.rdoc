@@ -8,7 +8,7 @@ Things you may want to cover:
   * Install Ruby on rails http://guides.rubyonrails.org/getting_started.html
   * Add the PDF File [Principles_of_Economics_6th.pdf] to be parsed to the Project folder
     * Open Rails Console
-    * Run PdfParser.init.
+    * Run <tt>PdfParser.init</tt>.
     * Once the script is executed. You can see all the images and text in the app/assets/book/ directory
 
 * Rails version
