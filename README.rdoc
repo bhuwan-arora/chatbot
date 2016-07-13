@@ -5,9 +5,9 @@ application up and running.
 
 Things you may want to cover:
 * Setup Instructions
-	* Install Ruby on rails http://guides.rubyonrails.org/getting_started.html
-	* Add the PDF File [Principles_of_Economics_6th.pdf] to be parsed to the Project folder.
-	* Install Poppler https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+  * Install Ruby on rails http://guides.rubyonrails.org/getting_started.html
+  * Add the PDF File [Principles_of_Economics_6th.pdf] to be parsed to the Project folder.
+  * Install Poppler https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
 
 * Rails version
 <tt>rails 4.2.3</tt>
