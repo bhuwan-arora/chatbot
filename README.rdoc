@@ -4,9 +4,15 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
+* Setup Instructions
+Install Ruby on rails
+[a link](http://guides.rubyonrails.org/getting_started.html)
+
+* Rails version
+<tt>rails 4.2.3</tt>
 
 * Ruby version
-ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]
+<tt>ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]</tt>
 
 * System dependencies
 
@@ -22,7 +28,9 @@ ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]
 
 * Deployment instructions
 
-* ...
+
+
+
 
 
 Please feel free to use a different markup language if you do not plan to run
