@@ -1,0 +1,3 @@
+module PdfParser::Regex
+	
+end
