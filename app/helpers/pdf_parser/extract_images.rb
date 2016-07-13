@@ -23,25 +23,29 @@ module PdfParser::ExtractImages
         end
 
         def process_page(page, count)
-            xobjects = page.xobjects
-            return count if xobjects.empty?
+            begin
+                xobjects = page.xobjects
+                return count if xobjects.empty?
 
-            xobjects.each do |name, stream|
-                case stream.hash[:Subtype]
-                when :Image then
-                    count += 1
-
-                    case stream.hash[:Filter]
-                    when :CCITTFaxDecode then
-                        PdfParser::ExtractImages::Tiff.new(stream).save("#{page.number}-#{count}-#{name}.tif")
-                    when :DCTDecode then
-                        PdfParser::ExtractImages::Jpg.new(stream).save("#{page.number}-#{count}-#{name}.jpg")
-                    else
-                        PdfParser::ExtractImages::Raw.new(stream).save("#{page.number}-#{count}-#{name}.tif")
+                xobjects.each do |name, stream|
+                    filename = "app/assets/book/images/#{page.number}-#{count}-#{name}"
+                    case stream.hash[:Subtype]
+                    when :Image then
+                        count += 1
+                        # case stream.hash[:Filter]
+                        # when :CCITTFaxDecode then
+                        #     PdfParser::ExtractImages::Tiff.new(stream).save("#{filename}.tif")
+                        # when :DCTDecode then
+                        # else
+                        #     PdfParser::ExtractImages::Raw.new(stream).save("#{filename}.tif")
+                        # end
+                        PdfParser::ExtractImages::Jpg.new(stream).save("#{filename}.jpg")
+                    when :Form then
+                        count = process_page(PDF::Reader::FormXObject.new(page, stream), count)
                     end
-                when :Form then
-                    count = process_page(PDF::Reader::FormXObject.new(page, stream), count)
                 end
+            rescue Exception => e
+                    
             end
             count
         end

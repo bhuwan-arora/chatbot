@@ -16,3 +16,7 @@
 !/log/.keep
 /tmp
 Principles_of_Economics_6th.pdf
+app/assets/book/images/
+app/assets/book/text/
+poppler-0.45.0/
+.byebug_history
