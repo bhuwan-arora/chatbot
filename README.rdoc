@@ -5,7 +5,8 @@ application up and running.
 
 Things you may want to cover:
 * Setup Instructions
-  * Install Ruby on rails http://guides.rubyonrails.org/getting_started.html
+  * Install Ruby on rails https://gorails.com/setup/osx/10.11-el-capitan
+  * bundle install
   * Add the PDF File [Principles_of_Economics_6th.pdf] to be parsed to the Project folder
     * Open Rails Console
     * Run <tt>PdfParser.init</tt>.
