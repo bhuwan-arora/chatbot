@@ -1,0 +1,49 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+* Setup Instructions
+  * Install Ruby on rails https://gorails.com/setup/osx/10.11-el-capitan
+  * bundle install
+  * Add the PDF File [Principles_of_Economics_6th.pdf] to be parsed to the Project folder
+    * Open Rails Console
+    * Run <tt>PdfParser.init</tt>.
+    * Once the script is executed. You can see all the images and text in the app/assets/book/ directory
+
+* Rails version
+<tt>rails 4.2.3</tt>
+
+* Ruby version
+<tt>ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]</tt>
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+<tt>rake db:create</tt>
+<tt>rake db:migrate</tt>
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* Helpers
+  * <tt>DatabaseReader</tt>: Debugger for your book. By printing the entire database in form of a book.
+  * <tt>ChatbotHelper</tt>: Add the query parsers for the chatbot that connect with Wit.ai
+  * <tt>DocxParser</tt>: A parser for the docx file that inserts data into the database.
+  * <tt>MathsHelper</tt>: Handles basic math, string operations
+  * <tt>PdfParser</tt>: Not been used now, parses the PDF file.
+
+
+
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
