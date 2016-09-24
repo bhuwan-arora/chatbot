@@ -42,8 +42,5 @@ Things you may want to cover:
   * <tt>PdfParser</tt>: Not been used now, parses the PDF file.
 
 
-
-
-
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
